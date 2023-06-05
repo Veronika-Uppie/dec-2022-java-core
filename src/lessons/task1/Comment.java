@@ -3,7 +3,7 @@ package lessons.task1;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
-@FieldDefaults
+@FieldDefaults(level = AccessLevel.PRIVATE)
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
@@ -13,7 +13,7 @@ import lombok.experimental.FieldDefaults;
 public class Comment {
     private int postId;
     private int id;
-    public String name;
+    private String name;
     private String email;
-    public String body;
+    private String body;
 }
